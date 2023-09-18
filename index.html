@@ -44,6 +44,74 @@
             </strong>
         </div>
 
+        <!-- Slide Show Section  -->
+
+        <div id="Slideshow">
+            <div id="Slideshow_Background" >
+                <div id="Slideshow_Container">
+
+
+                    
+                    <!-- Slide 1/6  -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Working.png" alt="Test image 1">
+                        <div class="text"> I am an Engineer</div>
+                    </div>
+
+                    
+                    <!-- Slide 2/6  -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Working.png" alt="Test image 1">
+                        <div class="text"> I am an Engineer</div>
+                    </div>
+
+                    
+                    <!-- Slide 2/6  -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Working.png" alt="Test image 1">
+                        <div class="text"> I am an Engineer</div>
+                    </div>
+
+                    
+                    <!-- Slide 4/6  -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Working.png" alt="Test image 1">
+                        <div class="text"> I am an Engineer</div>
+                    </div>
+
+                    
+                    <!-- Slide 5/6  -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Working.png" alt="Test image 1">
+                        <div class="text"> I am an Engineer</div>
+                    </div>
+
+                    
+                    <!-- Slide 6/6  -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="images/Working.png" alt="Test image 1">
+                        <div class="text"> I am an Engineer</div>
+                    </div>
+
+                    <!-- next and previous buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <!-- Slide SHow Dots -->
+                    <div style="text-align: center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="dot" onclick="currentSlide(4)"></span> 
+                        <span class="dot" onclick="currentSlide(5)"></span> 
+                        <span class="dot" onclick="currentSlide(6)"></span> 
+                    </div>
+            </div>
+        </div>
+
+        <!-- Slide Show section  -->
+
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
@@ -128,26 +196,28 @@
         
 
         <!--Contact section-->
-        <div class="Row" id="Contact">
-            <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <img src="images/html_custom.png" alt="Contact_Image">
+
+        <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                    <form action="" method="POST" class="form-container"> 
+                        <h1>Contact</h1>
+                        <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Type your name here" name="name" required>
+                        <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Type your phone number here" name="phone">
+                        <label for="email"><b>Email</b></label>		
+                        <input type="text" placeholder="Type your email address here" name="email" required>
+                        <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+            
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                    </form>
             </div>
-            <!--Contact form, right column-->
-            <div class="Column_1 Column_tall">
-                <h1>Contact</h1>
-                <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="https://formspree.io/f/xnqkdbyn" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                    <label>Name:</label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
-                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                    <label>Message:</label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
-                </form>
             </div>
-        </div>
+        
 
         <!--Footer section-->
         <footer>
@@ -156,5 +226,6 @@
                 <br>
             </p>
         </footer>
+        <script src="JS/portfolio.js"  ></script>
     </body>
 </html>

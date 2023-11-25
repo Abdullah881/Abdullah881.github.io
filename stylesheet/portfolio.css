@@ -209,6 +209,11 @@ footer {
 }
 
 /* Slideshow section / container */
+
+#Slideshow {
+    display: none;
+}
+
 #Slideshow_Container {
     width: 39.5vw; /* Relative sizing of the container for the slide show set to 39.5% of the viewport width */
     height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
